@@ -16,9 +16,11 @@ Operations.divide = function divide(a,b){
   return a/b;
 }
 
-function operate(number1, number2, operation){
-  let numer1 = prompt("Escribe el primer número");
-  let numer2 = prompt("Escribe el segundo número");
+function operate(operation){
+  let number1 = Number(prompt("Escribe el primer número"));
+  let number2 = Number(prompt("Escribe el segundo número"));
   
-  operation(numer1, number2);
+  return operation(number1, number2);
 }
+
+operate(Operations.add);
