@@ -53,6 +53,16 @@ main .buttonsContainer{
     align-items: center;
     justify-content: center;
 }
+main .buttonsContainer button{
+    max-width: 100px;
+    max-height: 100px;
+    background-color: #D0D1D2;
+    color: black;
+    border-radius: 22px;
+    font-size: 50px;
+    text-align: center;
+
+}
 main .buttonsContainer button:not(:hover){
     max-width: 100px;
     max-height: 100px;
@@ -63,8 +73,13 @@ main .buttonsContainer button:not(:hover){
     text-align: center;
 
 }
-
-main .buttonsContainer button :hover{
+main .buttonsContainer button:hover{
+    max-width: 100px;
+    max-height: 100px;
+    color: black;
+    border-radius: 22px;
+    font-size: 50px;
+    text-align: center;
     background-color: #b0b1b3;
     border: 1px solid black;
 }
