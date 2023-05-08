@@ -17,13 +17,17 @@ main{
 }
 footer{
     height: 20px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
 main .calculatorContainer{
     max-width: 800px;
     height: 100%;
-    background-color: beige;
+    background-color: rgb(192, 192, 149);
+    border: 2px solid black;
+    border-radius: 3px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -32,6 +36,9 @@ main .calculatorContainer{
 main .screenContainer canvas{
     max-width: 800px;
     height: 200px;
+    border: 1px solid black;
+    background-color: rgb(136, 202, 202);
+    border-radius: 3px;
 }
 
 main .buttonsContainer{
@@ -42,13 +49,13 @@ main .buttonsContainer{
     gap: 10px 10px;
 }
 main .buttonsContainer button{
-    width: 25px;
-    height: 25px;
+    max-width: 50px;
+    max-height: 50px;
     border: 1px solid black;
     background-color: azure;
     color: rgb(96, 185, 185);
     border-radius: 3px;
-    font-size: 18px;
+    font-size: 28px;
     text-align: center;
 
 }
