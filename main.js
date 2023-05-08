@@ -23,4 +23,3 @@ function operate(operation){
   return operation(number1, number2);
 }
 
-operate(Operations.add);

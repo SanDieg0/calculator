@@ -9,6 +9,8 @@ html{
 }
 header{
     height: 100px;
+    text-align: center;
+    margin: 0 auto;
 }
 main{
     height: 100% - 120px;
@@ -24,6 +26,7 @@ main .calculatorContainer{
     background-color: beige;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 main .screenContainer canvas{
