@@ -66,8 +66,12 @@ main .buttonsContainer{
     text-align: center;
     border: 1px solid white;
 }*/
-main .buttonsContainer button .equal{
+#equal:not(:hover){
     background-color: orange;
+}
+.buttonsContainer #equal:hover{
+    background-color: orange;
+    border: 1px solid orange;
 }
 main .buttonsContainer button .operator{
     background-color: #b0b1b3;
