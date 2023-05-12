@@ -1,18 +1,16 @@
-const Operations = {};
-
-Operations.add = function add(a,b){
+function add(a,b){
   return a+b;
 }
 
-Operations.substract = function substract(a,b){
+function substract(a,b){
   return a-b;
 }
 
-Operations.multiply = function multiply(a,b){
+function multiply(a,b){
   return a*b;
 }
 
-Operations.divide = function divide(a,b){
+function divide(a,b){
   return a/b;
 }
 
