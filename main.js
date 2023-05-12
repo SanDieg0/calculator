@@ -22,6 +22,17 @@ function operate(operation){
 }
 
 
+const screen = document.querySelector('.screen');
 
-const screen = document.getElementsByClassName('screen');
-//const 
+const buttons = document.querySelectorAll('button');
+const clicks = [];
+
+buttons.forEach((botones) => {
+	botones.addEventListener("click", (boton) => {
+		//boton.value = boton.target.value;
+		clicks.push(boton.target.value)
+		//console.log(boton.value);
+		console.log(clicks);
+		screen.innerHTML = clicks;
+	});
+});

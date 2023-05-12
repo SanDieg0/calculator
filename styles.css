@@ -45,6 +45,10 @@ main .screenContainer .screen{
     border: 1px solid black;
     border-radius: 22px;
     margin: 10px auto 5px;
+color: black;
+font-size: 50px;
+padding: 30px 30px;
+text-align: end;
 }
 
 main .buttonsContainer{
