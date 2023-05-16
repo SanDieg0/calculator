@@ -11,26 +11,26 @@
     <main>
         <div class="calculator-container">
             <div class="input-container">
-                <div class="input" id="input">0</div>
-              </div>
+                <input type="text" class="input" id="input">
+            </div>
             <div class="buttons-container">
                 <button class="btn btn-num" onclick="addNumber('7')">7</button>
                 <button class="btn btn-num" onclick="addNumber('8')">8</button>
                 <button class="btn btn-num" onclick="addNumber('9')">9</button>
-                <button class="btn btn-opr" onclick="">+</button>
+                <button class="btn btn-opr" onclick="addNumber('+')">+</button>
                 <button class="btn btn-num" onclick="addNumber('4')">4</button>
                 <button class="btn btn-num" onclick="addNumber('5')">5</button>
                 <button class="btn btn-num" onclick="addNumber('6')">6</button>
-                <button class="btn btn-opr">-</button>
+                <button class="btn btn-opr" onclick="addNumber('-')">-</button>
                 <button class="btn btn-num" onclick="addNumber('1')">1</button>
                 <button class="btn btn-num" onclick="addNumber('2')">2</button>
                 <button class="btn btn-num" onclick="addNumber('3')">3</button>
-                <button class="btn btn-opr">&#215</button>
-                <button class="btn btn-num">0</button>
-                <button class="btn btn-num">.</button>
+                <button class="btn btn-opr" onclick="addNumber('*')">&times</button>
+                <button class="btn btn-num" onclick="addNumber('0')">0</button>
+                <button class="btn btn-num" onclick="addNumber('.')">.</button>
                 <button class="btn btn-del" onclick="clearInput()">C</button>
-                <button class="btn btn-opr">&divide</button>
-                <button class="btn btn-equal">=</button>
+                <button class="btn btn-opr" onclick="addNumber('/')">&divide</button>
+                <button class="btn btn-equal" onclick="equalTo()">=</button>
             </div>
         </div>
     </main>

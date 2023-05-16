@@ -45,10 +45,12 @@ main .input-container{
     align-items: center;
     justify-content: flex-end;
     text-align: right;
-    height: 100%;
-    width: 100%;
+    border: 0;
+    height: 140px;
+    width: 330px;
     padding: 40px;
     font-size: 70px;
+    background-color: #1a1a1a;
     color: #fdfefe;
     transition: all 0.3s ease-in;
 }
