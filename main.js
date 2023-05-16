@@ -1,10 +1,8 @@
-
 let result = null,
   operator = null,
   firstOperand = null,
   secondOperand = null
 
-// Calculator functions
 const clearInput = () => {
   let input = document.getElementById("input");
   console.log(input.value);
@@ -15,7 +13,6 @@ const clearInput = () => {
   secondOperand = null;
 };
 
-// Number buttons
 const addNumber = (btn) => {
   let input = document.getElementById("input");
   if (operator === null) {
