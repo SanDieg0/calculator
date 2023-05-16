@@ -4,42 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
     <title>Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Calculator</h1>
-    </header>
     <main>
-        <div class="calculatorContainer">
-            <div class="screenContainer">
-                <div class="screen"></div>
+        <div class="calculator-container gradient-border">
+            <div class="input-container">
+                <input type="text" class="input" id="input">
             </div>
-            <div class="buttonsContainer">
-                <button class="button number seven">7</button>
-                <button class="number eight">8</button>
-                <button class="number nine">9</button>
-                <button class="operator add">+</button>
-                <button class="number four">4</button>
-                <button class="number five">5</button>
-                <button class="number six">6</button>
-                <button class="operator substract">-</button>
-                <button class="number one">1</button>
-                <button class="number two">2</button>
-                <button class="number three">3</button>
-                <button class="operator multiply">*</button>
-                <button class="number zero">0</button>
-                <button class="number dot">.</button>
-                <button class="delete">\-</button>
-                <button class="operator divide">/</button>
-                <button class="equal" id="equal">=</button>
+            <div class="buttons-container">
+                <button class="btn btn-num" onclick="addNumber('7')">7</button>
+                <button class="btn btn-num" onclick="addNumber('8')">8</button>
+                <button class="btn btn-num" onclick="addNumber('9')">9</button>
+                <button class="btn btn-opr" onclick="addNumber('+')">+</button>
+                <button class="btn btn-num" onclick="addNumber('4')">4</button>
+                <button class="btn btn-num" onclick="addNumber('5')">5</button>
+                <button class="btn btn-num" onclick="addNumber('6')">6</button>
+                <button class="btn btn-opr" onclick="addNumber('-')">-</button>
+                <button class="btn btn-num" onclick="addNumber('1')">1</button>
+                <button class="btn btn-num" onclick="addNumber('2')">2</button>
+                <button class="btn btn-num" onclick="addNumber('3')">3</button>
+                <button class="btn btn-opr" onclick="addNumber('*')">&times</button>
+                <button class="btn btn-num" onclick="addNumber('0')">0</button>
+                <button class="btn btn-num" onclick="addNumber('.')">.</button>
+                <button class="btn btn-del" onclick="clearInput()">C</button>
+                <button class="btn btn-opr" onclick="addNumber('/')">&divide</button>
+                <button class="btn btn-equal" onclick="equalTo()">=</button>
             </div>
         </div>
     </main>
-    <footer>
-        <p>Copyright</p>
-    </footer>
     <script src="main.js"></script>
 </body>
 </html>
