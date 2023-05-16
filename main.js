@@ -118,22 +118,62 @@ function addOperator(value) {
 
 // Keyboard support
 document.addEventListener("keydown", function (event) {
-  if (event.key >= 0 && event.key <= 9) {
-    addNumber(event.key);
-  } else if (event.key == ".") {
-    addNumber(event.key);
-  } else if (event.key == "Backspace") {
-    clearInput();
-  } else if (event.key == "+") {
-    addNumber(event.key);
-  } else if (event.key == "-") {
-    addNumber(event.key);
-  } else if (event.key == "*") {
-    addNumber(event.key);
-  } else if (event.key == "/") {
-    addNumber(event.key);
-  } else if (event.key == "Enter") {
-    equalTo();
+  const key = event.key;
+  switch(key) {
+    case '0':
+      addNumber(0);
+      break;
+    case '1':
+      addNumber(1);
+      break;
+    case '2':
+      addNumber(2);
+      break;
+    case '3':
+      addNumber(3);
+      break;
+    case '4':
+      addNumber(4);
+      break;
+    case '5':
+      addNumber(5);
+      break;
+    case '6':
+      addNumber(6);
+      break;
+    case '7':
+      addNumber(7);
+      break;
+    case '8':
+      addNumber(8);
+      break;
+    case '9':
+      addNumber(9);
+      break;
+    case '.':
+      addDecimal('.');
+      break;
+    case '+':
+      addOperator('+');
+      break;
+    case '-':
+      addOperator('-');
+      break;
+    case '*':
+      addOperator('*');
+      break;
+    case '/':
+      addOperator('/');
+      break;
+    case '=':
+      equalTo();
+      break;
+    case 'Enter':
+      equalTo();
+      break;
+    case 'Backspace':
+      clearInput();
+      break;
   }
 });
 

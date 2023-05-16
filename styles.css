@@ -30,7 +30,7 @@ main .calculator-container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 main .input-container{
     display: flex;
@@ -53,6 +53,11 @@ main .input-container{
     background-color: #1a1a1a;
     color: #fdfefe;
     transition: all 0.3s ease-in;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none!important;
 }
 
 main .buttons-container{
@@ -85,4 +90,3 @@ main .buttons-container{
 .btn.btn-opr, .btn-equal {
     background-color: orange;
 }
-
